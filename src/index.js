@@ -1,5 +1,3 @@
-console.log("Deam Bardach")
-
-import loadPage from "./page-load.js"
-
-loadPage()
+import showName from "./logname.js"
+import "./style.css"
+showName()
