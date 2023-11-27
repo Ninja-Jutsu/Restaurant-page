@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[416],{225:(e,s,t)=>{function a(){console.log("I come from the other file")}t.d(s,{Z:()=>a})}},e=>{e(e.s=225)}]);
-//# sourceMappingURL=logname.bundle.js.map
