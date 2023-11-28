@@ -3,7 +3,6 @@ import Icon2 from './img/Tajine-Chermoula.jpg';
 import Icon3 from './img/hrira.jpeg';
 import Icon4 from './img/lham.webp';
 import Icon5 from './img/tagine.jpg';
-
 export default function menuDOM (){
     const couscous = new Image();
     couscous.src = Icon1;
@@ -16,7 +15,6 @@ export default function menuDOM (){
     const tagine = new Image();
     tagine.src = Icon5;
 
-    
     const div = document.createElement('div')
 
     const mainDishesContainer = document.createElement('div')
@@ -62,7 +60,6 @@ export default function menuDOM (){
     secondDish.appendChild(tagineBeef)
     secondDish.appendChild(addToCart2)
 
-
     const thirdDish = document.createElement('div')
     thirdDish.classList.add('third-dish')
     const thirdDishTitle = document.createElement('h3')
@@ -99,7 +96,6 @@ export default function menuDOM (){
     fourthDish.appendChild(lham)
     fourthDish.appendChild(addToCart4)
 
-
     const fifthDish = document.createElement('div')
     fifthDish.classList.add('fifth-dish')
     const fifthDishTitle = document.createElement('h3')
@@ -118,8 +114,6 @@ export default function menuDOM (){
     fifthDish.appendChild(tagine)
     fifthDish.appendChild(addToCart5)
 
-
-
     mainDishesContainer.appendChild(firstDish)
     mainDishesContainer.appendChild(secondDish)
     mainDishesContainer.appendChild(thirdDish)
@@ -127,6 +121,5 @@ export default function menuDOM (){
     mainDishesContainer.appendChild(fifthDish)
 
     div.appendChild(mainDishesContainer)
-
     return div.innerHTML
 }

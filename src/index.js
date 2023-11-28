@@ -1,6 +1,7 @@
 import showName from "./main-dishes.js"
 import menuDOM from "./menu"
 import cart from './icons/cart.svg'
+import AddToCart from "./add-to-cart"
 import "./style.css"
 
 const shopCart = new Image()
@@ -8,6 +9,8 @@ shopCart.src = cart
 
 let div = document.createElement('div')
 div.classList.add('content')
+div.innerHTML = showName()
+
 let cartSpan = document.createElement('span')
 cartSpan.classList.add('cart-span')
 let bar = document.createElement("div")
@@ -31,21 +34,12 @@ const body = window.document.body
 body.appendChild(bar)
 body.appendChild(div)
 
-window.addEventListener('load', () => {
-    div.innerHTML = menuDOM()
-})
-
 homeBtn.addEventListener('click', () => {
     div.innerHTML = showName()
+    AddToCart()
 })
 
 menuBtn.addEventListener('click', () => {
     div.innerHTML = menuDOM()
+    AddToCart()
 })
-
-
-function AddToCart(){
-    document.querySelector('.add-to-cart1').addEventListener('click', () => {
-
-    })
-}
