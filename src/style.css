@@ -6,11 +6,19 @@
   margin: 0;
 }
 
+
+/* FIRST PAGE */
+html {
+    border: 50px solid transparent;
+    border-image: url(./img/Zelij.webp) 30 round;
+}
 .content {
     display: grid;
     grid-template-rows: 100px 1fr;
-    height: 100vh;
-    width: 100vw;
+    align-items: center;
+    justify-items: center;
+    border-width: 50px;
+
 }
 
 header {
@@ -49,4 +57,67 @@ li {
     margin-left:50px;
     margin-right:50px;
     border-radius: 16px;
+}
+
+/* SECOND PAGE */
+.main-dishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-dishes div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min-content;
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+h1{
+    color: brown;
+    font-size: 3rem;
+    background-color: rgb(105, 190, 190);
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    color: green;
+    font-size: 2rem;
+}
+
+h4 {
+    color: gold;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.main-dishes div p {
+    font-size: 20px;
+}
+
+.bar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bar button{
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
