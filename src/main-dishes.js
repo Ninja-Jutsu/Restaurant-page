@@ -1,22 +1,5 @@
 export default function showName(){
      const div = document.createElement('div')
-     const header = document.createElement('header')
-     const ul = document.createElement('ul')
-     const home = document.createElement('li')
-     home.classList.add('home')
-     home.innerText = 'Home'
-     const menu = document.createElement('li')
-     menu.classList.add('menu')
-     menu.innerText = 'Menu'
-     const contact = document.createElement('li')
-     contact.classList.add('contact')
-     contact.innerText = 'Contact'
-
-     ul.appendChild(home)
-     ul.appendChild(menu)
-     ul.appendChild(contact)
-     header.appendChild(ul)
-     div.appendChild(header)
 
      const main = document.createElement('div')
      main.classList.add("main")
@@ -29,11 +12,11 @@ export default function showName(){
      title.classList.add('intro-div')
      const introPara = document.createElement('p')
      introPara.classList.add('para')
-     introPara.innerText = `Moroccan cuisine (Arabic: المطبخ المغربي) is the cuisine of Morocco,
-     fueled by interactions and exchanges with many cultures and nations over the centuries.[1] 
+     introPara.innerText = `Moroccan cuisine is the cuisine of Morocco,
+     fueled by interactions and exchanges with many cultures and nations over the centuries.
      Moroccan cuisine is usually a mix of Berber, Andalusi, Mediterranean, and Arab cuisines, with
-     minimal European (French and Spanish) and sub-Saharan influences.[2] Like the rest of the Maghrebi cuisine,
-     Moroccan cuisine has more in common with Middle Eastern cuisine than with the rest of Africa.[3]`
+     minimal European (French and Spanish) and sub-Saharan influences. Like the rest of the Maghrebi cuisine,
+     Moroccan cuisine has more in common with Middle Eastern cuisine than with the rest of Africa.`
 
 
      const hours = document.createElement('div')

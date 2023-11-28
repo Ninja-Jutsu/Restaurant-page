@@ -4,120 +4,138 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-
-/* FIRST PAGE */
-html {
+} 
+body{
     border: 50px solid transparent;
     border-image: url(./img/Zelij.webp) 30 round;
 }
+
 .content {
+    margin-top: 50px;
+}
+/* BAR */
+.bar{
     display: grid;
-    grid-template-rows: 100px 1fr;
-    align-items: center;
-    justify-items: center;
-    border-width: 50px;
-
-}
-
-header {
-    background-color: rgb(143, 237, 143)
-}
-
-
-header, ul{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-li {
-    list-style: none;
-    background-color: rgb(192, 244, 192);
-    padding: 5px;
-    border-radius: 8px;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 10px;
-}
-
-.main div{
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-    background-color: bisque;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left:50px;
-    margin-right:50px;
-    border-radius: 16px;
-}
-
-/* SECOND PAGE */
-.main-dishes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.main-dishes div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: min-content;
-    border: 2px solid black;
-    border-radius: 14px;
-    padding: 10px;
+.bar img {
+    width: 50px;
+    cursor: pointer;
 }
 
-img {
-    width: 500px;
-    height: auto;
-}
-
-h1{
-    color: brown;
-    font-size: 3rem;
-    background-color: rgb(105, 190, 190);
-    flex-grow: 1;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    color: green;
-    font-size: 2rem;
-}
-
-h4 {
-    color: gold;
-    font-weight: bolder;
-    font-size: 2rem;
-}
-
-.main-dishes div p {
-    font-size: 20px;
-}
-
-.bar{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.bar > div{
+    justify-self: center;
 }
 
 .bar button{
     border: none;
-    border-radius: 16px;
-    padding: 10px;
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 18px;
+    background-image: url(./img/zelij-galery.png);
     cursor: pointer;
+    color:rgb(12, 111, 12);
+    margin-left: 20px;
+}
+
+.bar button:hover {
+    scale: 0.97;
+    color: rgb(101, 228, 101);
+}
+
+.bar span {
+    color:red;
+    font-size: 1.3rem;
+}
+
+/* MAIN */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+
+.main div{
+    width: 700px;
+    background-color: azure;
+    padding: 15px;
+}
+
+.para {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.para::before {
+    content: open-quote;
+}
+.para::after {
+    content: close-quote;
+}
+
+.main h1{
+    font-size: 2rem;
+}
+
+/* SECOND PAGE */
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.main-dishes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main-dishes div{
+    width: 50vw;
+    border: 10px solid transparent;
+    border-image: url(./img/zelij-galery.png) 30 round;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.main-dishes img{
+    width: 45vw;
+}
+
+.main-dishes h2 {
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.main-dishes h3{
+    font-size: 2rem;
+    color: darkgreen;
+}
+
+.main-dishes p {
+    font-size: 1.3rem;
+}
+
+.main-dishes h4{
+    font-size: 3rem;
+    color: gold;
+}
+
+.main-dishes button{
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(90, 247, 90);
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 200px;
+    justify-self: center;
 }
