@@ -1,16 +1,17 @@
-import showName from "./main-dishes.js"
+import homePage from "./home-page.js"
 import menuDOM from "./menu"
 import contact from "./contact.js"
 import cart from './icons/cart.svg'
 import AddToCart from "./add-to-cart"
 import "./style.css"
+let picked = []
 
 const shopCart = new Image()
 shopCart.src = cart
 
 let div = document.createElement('div')
 div.classList.add('content')
-div.innerHTML = contact()
+div.innerHTML = homePage()
 
 let cartSpan = document.createElement('span')
 cartSpan.classList.add('cart-span')
@@ -35,14 +36,14 @@ const body = window.document.body
 body.appendChild(bar)
 body.appendChild(div)
 
+
 homeBtn.addEventListener('click', () => {
-    div.innerHTML = showName()
-    AddToCart()
+    div.innerHTML = homePage()
 })
 
 menuBtn.addEventListener('click', () => {
     div.innerHTML = menuDOM()
-    AddToCart()
+    AddToCart(picked)
 })
 
 contactBtn.addEventListener('click', () => {
