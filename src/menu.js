@@ -33,7 +33,8 @@ export default function menuDOM (){
     price1.innerText = '30$'
     const addToCart1 = document.createElement('button')
     addToCart1.classList.add('add-to-cart1')
-    addToCart1.innerText = 'Add To Cart'
+    addToCart1.innerText = 'Order'
+
 
     firstDish.appendChild(firstDishTitle)
     firstDish.appendChild(description1)
@@ -52,7 +53,7 @@ export default function menuDOM (){
 
     const addToCart2 = document.createElement('button')
     addToCart2.classList.add('add-to-cart2')
-    addToCart2.innerText = 'Add To Cart'
+    addToCart2.innerText = 'Order'
 
     secondDish.appendChild(secondDishTitle)
     secondDish.appendChild(description2)
@@ -70,7 +71,7 @@ export default function menuDOM (){
     price3.innerText = '18$'
     const addToCart3 = document.createElement('button')
     addToCart3.classList.add('add-to-cart3')
-    addToCart3.innerText = 'Add To Cart'
+    addToCart3.innerText = 'Order'
 
     thirdDish.appendChild(thirdDishTitle)
     thirdDish.appendChild(description3)
@@ -88,7 +89,7 @@ export default function menuDOM (){
     price4.innerText = '26$'
     const addToCart4 = document.createElement('button')
     addToCart4.classList.add('add-to-cart4')
-    addToCart4.innerText = 'Add To Cart'
+    addToCart4.innerText = 'Order'
 
     fourthDish.appendChild(fourthDishTitle)
     fourthDish.appendChild(description4)
@@ -106,7 +107,7 @@ export default function menuDOM (){
     price5.innerText = '22$'
     const addToCart5 = document.createElement('button')
     addToCart5.classList.add('add-to-cart5')
-    addToCart5.innerText = 'Add To Cart'
+    addToCart5.innerText = 'Order'
 
     fifthDish.appendChild(fifthDishTitle)
     fifthDish.appendChild(description5)

@@ -1,6 +1,7 @@
 import homePage from "./home-page.js"
 import menuDOM from "./menu"
 import contact from "./contact.js"
+import showCart from './display-cart.js'
 import cart from './icons/cart.svg'
 import AddToCart from "./add-to-cart"
 import "./style.css"
@@ -48,4 +49,8 @@ menuBtn.addEventListener('click', () => {
 
 contactBtn.addEventListener('click', () => {
     div.innerHTML = contact()
+})
+
+shopCart.addEventListener('click', () => {
+    div.innerHTML = showCart(picked)
 })
