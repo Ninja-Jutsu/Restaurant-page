@@ -1,5 +1,6 @@
 import showName from "./main-dishes.js"
 import menuDOM from "./menu"
+import contact from "./contact.js"
 import cart from './icons/cart.svg'
 import AddToCart from "./add-to-cart"
 import "./style.css"
@@ -9,7 +10,7 @@ shopCart.src = cart
 
 let div = document.createElement('div')
 div.classList.add('content')
-div.innerHTML = showName()
+div.innerHTML = contact()
 
 let cartSpan = document.createElement('span')
 cartSpan.classList.add('cart-span')
@@ -42,4 +43,8 @@ homeBtn.addEventListener('click', () => {
 menuBtn.addEventListener('click', () => {
     div.innerHTML = menuDOM()
     AddToCart()
+})
+
+contactBtn.addEventListener('click', () => {
+    div.innerHTML = contact()
 })

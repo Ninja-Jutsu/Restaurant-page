@@ -139,3 +139,36 @@ body{
     width: 200px;
     justify-self: center;
 }
+
+/* Contacts page */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contacts .card {
+    padding: 5px;
+    border: 10px solid transparent;
+    border-image: url(./img/zelij-galery.png) 30 round;
+}
+.contacts h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    background-image: url(./img/zelij-galery.png);
+}
+
+.contacts img {
+    width: 400px;
+    border-radius: 26px;
+}
+
+.contacts .spans {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
